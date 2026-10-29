@@ -1,22 +1,33 @@
-# RNA-seq Pipeline
+## RNA-seq Pipeline
 
-## Overview
+Workflow:
 
-This pipeline is being developed using Nextflow for reproducible RNA-seq analysis.
+```text
+FASTQ
+  ↓
+FASTQC
+  ↓
+FASTP
+  ↓
+STAR
+  ↓
+FEATURECOUNTS
+  ↓
+MULTIQC
+```
 
-## Planned Workflow
+### Execution
 
-FASTQ → FastQC → Fastp → STAR → featureCounts → MultiQC
+```bash
+nextflow run RNAseq/main.nf -profile docker
+```
 
-## Tools
+### Technologies
 
+- Nextflow DSL2
+- Docker
 - FastQC
-- Fastp
+- FastP
 - STAR
-- featureCounts
+- FeatureCounts
 - MultiQC
-- Nextflow
-
-## Status
-
-Under Development
