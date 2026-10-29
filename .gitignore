@@ -1,0 +1,65 @@
+# Nextflow
+.nextflow/
+.nextflow*
+work/
+
+# Nextflow reports
+report.html
+timeline.html
+trace.txt
+dag.html
+
+# Results
+results/
+output/
+out/
+
+# FASTQ files
+*.fastq.gz
+*.fq.gz
+*.fastq
+*.fq
+
+# Alignment files
+*.bam
+*.bam.bai
+*.bai
+*.sam
+
+# Variant files
+*.vcf
+*.vcf.gz
+*.bcf
+
+# Quantification files
+*.counts
+*.tsv.tmp
+
+# Logs
+*.log
+
+# MultiQC
+multiqc_report.html
+multiqc_data/
+
+# Reference files (optional)
+# Uncomment if references are downloaded externally
+# reference/
+# genome/
+# indices/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Python
+__pycache__/
+*.pyc
